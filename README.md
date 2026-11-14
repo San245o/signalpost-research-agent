@@ -2,6 +2,8 @@
 
 Research Norwegian companies from a supplied organisation-number batch. Python 3.11+ and its standard library are sufficient. The default run needs no API key, package installation, private Desktop file or mandatory download.
 
+The same agent and run command support Windows, Linux and macOS. CI checks CLI startup, the offline pipeline and source packaging on all three operating systems with Python 3.11, 3.12 and 3.13, with site packages disabled. On systems where the interpreter is named `python3`, use `python3` in place of `python` in the commands below.
+
 ## Run
 
     python -S run.py --manifest OFFICIAL_BATCH.jsonl --out out --search free

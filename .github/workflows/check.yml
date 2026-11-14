@@ -3,15 +3,17 @@ on: [push, pull_request]
 jobs:
   offline:
     strategy:
+      fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-latest, windows-latest, macos-latest]
         python: ['3.11', '3.12', '3.13']
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
-      - run: python -m pip install -r requirements.txt
-      - run: python -m unittest discover -s tests -t .
-      - run: python scripts/package_source.py
+      - run: python -S run.py --help
+      - run: python -S -m unittest discover -s tests -t .
+      - run: python -S scripts/package_source.py
