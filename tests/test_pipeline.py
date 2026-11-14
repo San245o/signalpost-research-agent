@@ -99,12 +99,18 @@ class InputTests(Workspace):
         self.assertEqual(seeds[ORG][1].text, gzip.decompress(p.read_bytes()).decode())
 
     def test_csv_snapshot_preserves_multiline_row(self):
-        p = self.root / "snapshot.csv"
-        body = 'organisasjonsnummer;navn;organisasjonsform.kode\n' + ORG + ';"FJORD\nTEST AS";AS\n'
-        p.write_text(body, encoding="utf-8")
-        seeds, warnings = load_snapshot(p, {ORG})
-        self.assertEqual(warnings, [])
-        self.assertIn('"FJORD\r\nTEST AS"', seeds[ORG][1].text)
+        for newline in ("\n", "\r\n"):
+            for compressed in (False, True):
+                with self.subTest(newline=repr(newline), compressed=compressed):
+                    p = self.root / ("snapshot.csv.gz" if compressed else "snapshot.csv")
+                    name = "FJORD" + newline + "TEST AS"
+                    body = 'organisasjonsnummer;navn;organisasjonsform.kode' + newline + ORG + ';"' + name + '";AS' + newline
+                    raw = body.encode("utf-8")
+                    p.write_bytes(gzip.compress(raw) if compressed else raw)
+                    seeds, warnings = load_snapshot(p, {ORG})
+                    self.assertEqual(warnings, [])
+                    self.assertEqual(seeds[ORG][0]["navn"], name)
+                    self.assertEqual(seeds[ORG][1].body, raw)
 
 
 class NetworkTests(Workspace):
