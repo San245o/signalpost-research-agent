@@ -1,0 +1,25 @@
+# Discovery pipeline
+
+1. Resolve official identity, accounts, roles and workplaces before optional enrichment.
+2. Assemble registered, exact-employer NAV, original-cache, business-email and name-derived candidates. Join rare legal-name tokens to the original domain vocabulary and generate a bounded rare non-leading token .no guess from the public register. Observed URL leads precede generated guesses. Deduplicate hosts. Keep source indices and rejection reasons in the separate audit ledger.
+3. Fetch with verified TLS, public DNS pinning, bounded retries, explicit robots policy and shared request/time limits.
+4. Require exact owner identifiers or source-specific name/contact corroboration. A fresh Wikidata entity with one exact P2333 may bridge an unrelated website brand only when the site also matches registered contact evidence; cite both fresh responses. A guessed domain spelling the whole legal-name core can also use a full legal owner statement plus a fresh, captured official namesake clearance and domain-holder check. Partial brand matches remain insufficient. Contradictory identifiers override weak corroboration.
+5. Follow bounded company-owned pages, advertised feeds and sitemaps, structured data and directly linked ATS/careers hosts. Apply identical identity/access gates to discovered destinations.
+6. Extract individual careers cards with raw local spans and explicit observation semantics. NAV UUID/name hints only select live details; current employer and status come from the detail response. Public JSON feeds require a real careers link chain, tenant/issuer matching and individual raw item spans. Recruiter advertisements remain distinct from direct employment. Repeated HTML/feed URLs retain richer dates and both evidence sources.
+7. Preserve captures and produce cited synthesis, explicit missing states and failure-aware refresh output. Keep unverified candidates outside submission envelopes.
+
+The original registry screening cache counts distinct parent holders, saturated at five. Shared phone and email/domain information reduces reliance on weak contact matches. It never proves ownership or supplies a company fact. All optional caches can be absent without aborting the batch.
+
+Dated advice and product articles are company publications. Only supported company-subject action headlines are labelled announcements. Publication dates must remain local to the article; footer dates, index titles and related-article headings are withheld. Careers-host navigation cannot consume the entire crawl budget before company news.
+
+Complete linked article cards on a publication index may use a standalone month-first English date. The date, heading and destination must share one card. Conflicting dates, footer dates and dates mentioned only in paragraph prose are withheld.
+
+The domain planner now covers leading multiword brand phrases, connector/generic-word removal and expanded Norwegian spellings before broad single-word guesses. Unreachable HTTPS hosts get one bare/www recovery attempt. A complete current company-owner name plus a currently registered general manager or chair can corroborate identity, with separate raw page spans and official role evidence, namesake/domain-holder checks, and vetoes for conflicting owners, housing associations, customer mentions and placeholders.
+
+The optional observed-domain builder crawls an explicit public host list with bounded requests, time and concurrency. It uses exact owned identifiers from permitted live sources to construct a reverse index, verifies saved body hashes before export and resumes completed host observations. Page text never enters the candidate archive. Every exported lead is reverified by the ordinary runtime pipeline.
+
+Structured content extraction resolves nested JSON-LD and same-script `@id` references, scopes microdata/RDFa properties and preserves the original source span, including referenced itemref elements. Business subtypes use the existing exact-owner gates. Readable descriptions come from service paragraphs in main content when page metadata is missing; navigation, footer, forms, cookie banners, testimonials and article bodies are excluded.
+
+An inline careers advertisement needs an explicit role, qualifications/responsibilities and an application instruction on the verified site. It is an observed advertisement with an actual observation date, not a confirmed current vacancy. Linked Greenhouse and Lever public API boards use a matching provider tenant and the captured website-to-board chain. Prospect pools and other tenants' jobs are excluded. Modification timestamps never become posting dates. Teamtailor issuer/employer checks remain in place.
+
+The synthesis groups supported facts into six business questions and provides cited financial cards and filing observations. Equity/assets ratios require the same reporting period and currency and positive assets. Missing hiring evidence is explicitly distinguished from a finding that the company is not hiring. All section, metric and observation evidence references are checked by envelope validation.

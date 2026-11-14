@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-14T11:53:07.956978+00:00",
+  "archive_sha256": "c629d0da46f8f0afc01b69e2d5506877ac7967ba79d136f1cd0c993a63b4423a",
+  "uncompressed_sha256": "6b1adf3dad965dbfa236535a351abcbf99c807e1ca9498a369c8cf39de2e96ef",
+  "uncompressed_bytes": 42262605,
+  "companies": 392307,
+  "website_urls": 531108,
+  "website_companies": 387417,
+  "social_url_hints": 21463,
+  "wikidata_companies": 10290,
+  "shared_social_urls_excluded": 163,
+  "nav_companies": 2032,
+  "screening": {
+    "filename": "public-website-seeds.jsonl.screening.json.gz",
+    "sha256": "728319e480a9300575608128de79d485a94ed04f553b9b1b312efe4409daad4a",
+    "source_file": "brreg-enheter.csv.gz",
+    "source_sha256": "302a115368b31ae0680ce985ab9acd7baf380b73f26832abdc14251aef54ab57",
+    "registry_rows": 1176403,
+    "licence": "NLOD-2.0",
+    "counts_are": "distinct-parent lower bounds capped at five; screening only",
+    "screened_values": {
+      "phones": 2069,
+      "email_domains": 2557,
+      "website_hosts": 819
+    }
+  },
+  "sources": [
+    {
+      "filename": "official_411k_domains.json",
+      "sha256": "06beaf667878521d38e4a26848a6ce828dc6b0f09e3d279a025b0d24eff0b8a3",
+      "extraction": "URL fields only; keyed by organisation number",
+      "source_file_modified_at": "2026-11-06T07:16:30.581601+00:00"
+    },
+    {
+      "filename": "universe-websites.json",
+      "sha256": "a1f506971d712dc804f060767ae3381ed7df49b3626de237e634d4136444caeb",
+      "extraction": "URL fields only; keyed by organisation number",
+      "source_file_modified_at": "2026-11-06T07:16:30.604114+00:00"
+    },
+    {
+      "filename": "wikidata-websites.json",
+      "sha256": "61f4ee7f14325bfa061f6b89ec3077a54899cb8989db0adb816317097dfa7d50",
+      "extraction": "URL fields only; keyed by organisation number",
+      "source_file_modified_at": "2026-11-06T07:16:30.648119+00:00"
+    },
+    {
+      "filename": "fagfolkguiden_harvested.json",
+      "sha256": "93f7fb72c0b468487baa9eaa13987d7b1b2718eb477e6f9d7b7b545a6dd12a58",
+      "extraction": "URL fields only; keyed by organisation number",
+      "source_file_modified_at": "2026-11-06T07:16:30.531342+00:00"
+    },
+    {
+      "filename": "universe_linkedin_profiles.json",
+      "sha256": "2677bbbb556d6d0136d083a11be37b12d34211a0cb1133f9ef167fe3fa12301d",
+      "extraction": "URL fields only; keyed by organisation number",
+      "source_file_modified_at": "2026-11-06T07:16:30.627113+00:00"
+    },
+    {
+      "filename": "universe_social_profiles.json",
+      "sha256": "dc6e1de5f2b326722c01fe508a04b5d9a0ad9041e3198fa892b09e6b4cd081f1",
+      "extraction": "URL fields only; keyed by organisation number",
+      "source_file_modified_at": "2026-11-06T07:16:30.645119+00:00"
+    },
+    {
+      "filename": "wikidata_enriched.json",
+      "sha256": "50ac5f07660f7fe790c071a92221eea1a9605628d5645112dcb7d5a626d67981",
+      "extraction": "website, social URL hints and Wikidata entity IDs only",
+      "source_file_modified_at": "2026-10-03T06:46:41.551150+00:00"
+    },
+    {
+      "filename": "brreg_companies.sqlite",
+      "sha256": "4cafae8e5dee15918557edd6cee632c992520b64787f3527cbf596c74588e23a",
+      "extraction": "public website column; subunit URLs are parent leads, not parent ownership; rare non-leading legal-name token .no guesses, candidate only",
+      "source_file_modified_at": "2026-11-03T11:27:42.070421+00:00"
+    },
+    {
+      "filename": "brreg_subunits.sqlite",
+      "sha256": "f882791c9b91e940befeeeac7f4455361016b83c3cf062fba8b54a7867f1eb80",
+      "extraction": "public website column; subunit URLs are parent leads, not parent ownership",
+      "source_file_modified_at": "2026-11-03T11:19:48.836760+00:00"
+    },
+    {
+      "filename": "verified-sites.sqlite",
+      "sha256": "2ea03f1745a4fb3ac6348b5d2efe0c201deac9b88513e6a3e7424a1773c11e71",
+      "extraction": "public website column; subunit URLs are parent leads, not parent ownership",
+      "source_file_modified_at": "2026-11-08T13:38:33.098166+00:00"
+    },
+    {
+      "filename": "unique_crawler_domains.json",
+      "sha256": "1028629c72cf52a105eac76292a51bcbb4b770bd5239f0451743cf6867d1a8af",
+      "extraction": "Whole legal-name or rare name-token/domain-label join to public register; candidate only",
+      "source_file_modified_at": "2026-11-06T07:16:30.596606+00:00"
+    },
+    {
+      "filename": "nav-feed-snapshot.json",
+      "sha256": "9dfd3f9214775b95fde9fd39e760f1aff18f40e3e648671596dc657e2c75896d",
+      "extraction": "ACTIVE UUIDs joined on unique registered company/subunit names; live exact-employer check required",
+      "source_file_modified_at": "2026-11-08T13:38:22.668622+00:00"
+    }
+  ],
+  "source_candidate_occurrences": {
+    "0": 278917,
+    "1": 43561,
+    "2": 7335,
+    "3": 7048,
+    "4": 17986,
+    "5": 5147,
+    "6": 12004,
+    "7": 274996,
+    "8": 62351,
+    "9": 201,
+    "10": 144173
+  },
+  "acquisition_timestamps": "Unknown; file modification times are not retrieval times",
+  "use": "Public URL candidates and provenance only. Re-fetch and prove exact entity before publication."
+}

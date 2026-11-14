@@ -1,0 +1,185 @@
+{
+  "implementation_version": "3.1.0",
+  "runtime_sha256": "6b38b58d577728b8ffdcc3291d27e7f9284100c3b14e7eaadafb31f550fee47e",
+  "changes": [
+    "Nested JSON-LD and same-script references, scoped microdata/itemref and RDFa business extraction",
+    "Main-content company descriptions when metadata is absent",
+    "Explicit inline recruitment ads and linked public Greenhouse/Lever boards",
+    "Cited business questions, financial metrics and filing observations",
+    "Research viewer topic tabs, financial cards, timelines, readable facts and sorting"
+  ],
+  "tests": {
+    "run": 155,
+    "passed": 154,
+    "skipped": 1,
+    "log": "runs\\research-desk-3-1\\full-suite.log"
+  },
+  "saved_source_100": {
+    "kind": "offline saved-source integration, not a fresh live benchmark",
+    "network_access": false,
+    "before": {
+      "companies": 100,
+      "completed": 100,
+      "errors": 0,
+      "official_website": 15,
+      "site_description": 12,
+      "hiring_signal": 0,
+      "company_profile": 10
+    },
+    "after": {
+      "companies": 100,
+      "completed": 100,
+      "errors": 0,
+      "official_website": 15,
+      "site_description": 14,
+      "hiring_signal": 1,
+      "company_profile": 10
+    },
+    "unavailable_new_urls": 6,
+    "evidence_spans_and_citations_valid": true,
+    "runtime_sha256": "6b38b58d577728b8ffdcc3291d27e7f9284100c3b14e7eaadafb31f550fee47e"
+  },
+  "saved_source_audit": {
+    "passed": true,
+    "envelopes": 100,
+    "unique_companies": 100,
+    "terminal_states": {
+      "completed": 100
+    },
+    "available_claims": 3471,
+    "evidence_records": 3266,
+    "unique_source_captures": 681,
+    "cited_summary_sentences": 1155,
+    "company_error_records": 0,
+    "all_source_captures_checked": 978,
+    "rejected_capture_files": 0,
+    "output_aliases_identical": true,
+    "failures": [],
+    "scope": "Structural integrity, captured-byte hashes and span/reference validity. Not a factual accuracy or official-score audit."
+  },
+  "viewer": {
+    "passed": true,
+    "company_count": 100,
+    "checks": [
+      "load all supplied companies",
+      "select and compare two",
+      "financial period selector",
+      "six research topic tabs",
+      "keyboard tab navigation",
+      "sort companies by revenue",
+      "open evidence and exact span",
+      "keyboard close dialog",
+      "search by org",
+      "export selected JSONL",
+      "ask from cited claims",
+      "company deep link",
+      "desktop 1440px",
+      "all tabs mobile 390px no horizontal overflow",
+      "dark mode"
+    ],
+    "browser_errors": []
+  },
+  "focused_live": {
+    "companies": 1,
+    "completed": 1,
+    "company_errors": 0,
+    "requests": 21,
+    "seconds": null,
+    "runtime_sha256": "6b38b58d577728b8ffdcc3291d27e7f9284100c3b14e7eaadafb31f550fee47e",
+    "observed_advertisements": [
+      {
+        "advertiser_name": "VEXTI AS",
+        "advertiser_organisation_number": "931873830",
+        "direct_employer_verified": false,
+        "listing_url": "https://www.vexti.no/ledig-stilling",
+        "observed_at": "2026-11-14",
+        "relationship": "advertised_role; direct_employer_not_independently_confirmed",
+        "title": "tømrere",
+        "url": "https://www.vexti.no/ledig-stilling"
+      }
+    ],
+    "audit": {
+      "passed": true,
+      "envelopes": 1,
+      "unique_companies": 1,
+      "terminal_states": {
+        "completed": 1
+      },
+      "available_claims": 47,
+      "evidence_records": 46,
+      "unique_source_captures": 11,
+      "cited_summary_sentences": 18,
+      "company_error_records": 0,
+      "all_source_captures_checked": 19,
+      "rejected_capture_files": 0,
+      "output_aliases_identical": true,
+      "failures": [],
+      "scope": "Structural integrity, captured-byte hashes and span/reference validity. Not a factual accuracy or official-score audit."
+    }
+  },
+  "previous_version_3_0_live_100": {
+    "seed": 2026111408,
+    "scope": "Same previously unseen 100-company sample rerun after substantive discovery changes; earlier reference retained, not an official score",
+    "companies": 100,
+    "completed": 100,
+    "website_companies": 15,
+    "social_companies": 10,
+    "social_links": 14,
+    "hiring_claims": 0,
+    "company_publications": 7,
+    "company_error_records": 0,
+    "requests": 1308,
+    "seconds": 294.859,
+    "runtime_sha256": "926f8ab594298a8b58ad466a551eaedaa3d0618fde2956cba4718b930a9ad1d8",
+    "manifest_sha256": "b495d447bc31f1119cc924d4bdff059346b0053ebd88668044586e77c6d66f8c",
+    "candidate_map_sha256": "c629d0da46f8f0afc01b69e2d5506877ac7967ba79d136f1cd0c993a63b4423a",
+    "observed_index_sha256": "d00a29748dd1da9462d578949691f9fea61aab65a95a6a633e2e8e40536051a1",
+    "paid": false,
+    "browser": false,
+    "search": "free"
+  },
+  "observed_index_build": {
+    "schema_version": 2,
+    "generated_at": "2026-11-14T13:02:59Z",
+    "archive_sha256": "d00a29748dd1da9462d578949691f9fea61aab65a95a6a633e2e8e40536051a1",
+    "companies": 10,
+    "website_urls": 10,
+    "candidate_only": true,
+    "sources": [
+      {
+        "filename": "unique_crawler_domains.json",
+        "sha256": "1028629c72cf52a105eac76292a51bcbb4b770bd5239f0451743cf6867d1a8af",
+        "kind": "explicit public host list"
+      },
+      {
+        "filename": "company-universe.jsonl.gz",
+        "sha256": "1c89710e5b01f8617e86d09fbdff4a52f2f8dbbba297e74f7164b5984f5a0384",
+        "kind": "public registry universe; NLOD-2.0"
+      }
+    ],
+    "policy": "Live public DNS/TLS/robots checks; exact ownership-labelled identifier; page text stays in local state; all candidates require fresh runtime verification.",
+    "requests": 479,
+    "selected_hosts": 160,
+    "new_completed_hosts": 160,
+    "cached_completed_hosts": 0,
+    "seconds": 120.219
+  },
+  "clean_package": {
+    "passed": true,
+    "files": 74,
+    "runtime_sha256": "6b38b58d577728b8ffdcc3291d27e7f9284100c3b14e7eaadafb31f550fee47e",
+    "runtime_matches_saved_integration": true,
+    "archive_payload_matches_workspace": true,
+    "network_blocked": true,
+    "python_site_packages_disabled": true,
+    "bundled_and_missing_cache_checked": true,
+    "desktop_inputs": false
+  },
+  "remaining_limits": [
+    "Unrelated brand-domain discovery and social account coverage remain incomplete.",
+    "The observed-domain index is a small initial acquisition.",
+    "Unsupported job formats and JavaScript-only sources can remain undiscovered.",
+    "The 1,000-company scale check has not run."
+  ],
+  "official_score": false
+}

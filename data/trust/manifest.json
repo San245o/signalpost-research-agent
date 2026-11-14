@@ -1,0 +1,8 @@
+{
+  "source": "Mozilla CA bundle distributed by certifi",
+  "certifi_version": "2026.10.23",
+  "source_url": "https://pypi.org/project/certifi/2026.10.23/",
+  "sha256": "2ef52ad56b4803e264045c915e55c236cbfa045b84b81efefc218a19eb44bd2b",
+  "licence": "MPL-2.0",
+  "modified": false
+}

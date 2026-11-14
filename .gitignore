@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+runs/
+dist/
+research/
+data/*.gz
+!data/public-website-seeds.jsonl.gz
+!data/public-website-seeds.jsonl.screening.json.gz
+!data/observed-website-seeds.jsonl.gz
+data/*.sqlite*

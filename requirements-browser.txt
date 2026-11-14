@@ -1,0 +1,2 @@
+# Optional only. The default evaluator command needs no third-party packages.
+playwright==1.63.0
